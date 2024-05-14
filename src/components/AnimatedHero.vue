@@ -5,7 +5,7 @@
         <source src="../assets/www.mp4" type="video/mp4">
       </video>
       <b-row class="justify-content-center align-items-center">
-        <b-col cols="12" md="8" lg="6" class="text-center">
+        <b-col cols="12" md="8" lg="6" class="text-center content-wrapper">
           <h1 class="hero-title">Welcome to My Portfolio</h1>
           <p class="hero-subtitle">Discover my projects and skills</p>
           <b-button variant="primary" size="lg" class="hero-button">Explore Now</b-button>
@@ -32,6 +32,12 @@
   z-index: -1;
 }
 
+.content-wrapper {
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
 .hero-title {
   font-size: 4rem;
   font-weight: bold;
@@ -40,6 +46,8 @@
   opacity: 0;
   transform: translateY(50px);
   animation: fadeInUp 1s ease-out forwards;
+  padding: 1rem;
+  display: inline-block;
 }
 
 .hero-subtitle {
