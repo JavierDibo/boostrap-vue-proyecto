@@ -1,3 +1,4 @@
+<!-- NavBar.vue -->
 <template>
   <b-navbar toggleable="md" type="dark" class="custom-navbar" fixed="top">
     <b-navbar-brand href="#">My Portfolio</b-navbar-brand>

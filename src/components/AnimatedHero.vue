@@ -1,3 +1,4 @@
+<!-- AnimatedHero.vue -->
 <template>
   <div>
     <b-container fluid class="hero-section">
