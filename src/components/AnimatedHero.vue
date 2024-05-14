@@ -5,7 +5,7 @@
         <source src="../assets/www.mp4" type="video/mp4">
       </video>
       <b-row class="justify-content-center align-items-center">
-        <b-col cols="12" md="8" lg="6" class="text-center content-wrapper">
+        <b-col cols="12" md="12" lg="6" class="text-center content-wrapper">
           <h1 class="hero-title">Welcome to My Portfolio</h1>
           <p class="hero-subtitle">Discover my projects and skills</p>
           <b-button variant="primary" size="lg" class="hero-button">Explore Now</b-button>
@@ -16,8 +16,10 @@
 </template>
 
 <style scoped>
+
 .hero-section {
-  height: 100vh;
+  height: calc(100vh + 72px); /* Adjust the height to account for the navbar height */
+  padding-top: 72px; /* Add padding top equal to the navbar height */
   position: relative;
   overflow: hidden;
 }

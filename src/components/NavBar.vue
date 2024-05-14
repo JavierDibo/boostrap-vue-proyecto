@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="md" type="dark" variant="primary" fixed="top">
+  <b-navbar toggleable="md" type="dark" class="custom-navbar" fixed="top">
     <b-navbar-brand href="#">My Portfolio</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -36,12 +36,18 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-  transition: background-color 0.3s;
+
+.custom-navbar {
+  background: linear-gradient(to right, #2a166b, #6200ff);
+  padding: 1rem;
+  height: 72px; /* Set a fixed height for the navbar */
 }
 
-.navbar:hover {
-  background-color: #0056b3;
+.navbar-brand,
+.nav-link {
+  color: #fff;
+  font-weight: bold;
+  margin-right: 1rem;
 }
 
 .nav-link {
