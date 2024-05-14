@@ -1,7 +1,6 @@
 <!-- ParallaxSection.vue -->
 <template>
   <div class="parallax-section">
-    <b-img :src="imageSrc" class="parallax-image" alt="Parallax Image"></b-img>
     <div class="parallax-content">
       <slot></slot>
     </div>
@@ -10,12 +9,6 @@
 
 <script>
 export default {
-  props: {
-    imageSrc: {
-      type: String,
-      required: true,
-    },
-  },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
   },
@@ -24,10 +17,9 @@ export default {
   },
   methods: {
     handleScroll() {
-      const parallaxImage = this.$el.querySelector('.parallax-image');
-      /*const scrollPosition = document.documentElement.scrollTop;
-      parallaxImage.style.transform = `translateY(${scrollPosition * 0.3}px)`;*/
-      parallaxImage.style.transform = `translateY(0)`;
+      const parallaxSection = this.$el;
+      const scrollPosition = window.document.documentElement.scrollTop;
+      parallaxSection.backgroundPositionY = `${scrollPosition * 0.3}px`;
     },
   },
 };
@@ -36,18 +28,12 @@ export default {
 <style scoped>
 .parallax-section {
   position: relative;
-  height: 400px;
-  overflow: hidden;
-}
-
-.parallax-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translateZ(0);
+  height: 100vh;
+  background-image: url('../assets/about.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax-content {

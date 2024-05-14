@@ -2,15 +2,15 @@
   <div id="app">
     <NavBar />
     <AnimatedHero id="home" />
-    <ParallaxSection imageSrc="./about.jpg" id="about">
+    <ParallaxSection imageSrc="../about.jpg" id="about">
       <h2>About Me</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </ParallaxSection>
-    <ParallaxSection imageSrc="./projects.jpg" id="projects">
+    <ParallaxSection imageSrc="projects.jpg" id="projects">
       <h2>Projects</h2>
       <p>Explore my latest projects and creations.</p>
     </ParallaxSection>
-    <ParallaxSection imageSrc="./contact.jpg" id="contact">
+    <ParallaxSection imageSrc="contact.jpg" id="contact">
       <h2>Contact Me</h2>
       <p>Get in touch with me for collaborations or inquiries.</p>
     </ParallaxSection>
