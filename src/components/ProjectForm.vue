@@ -12,8 +12,13 @@
       <b-form-textarea id="details" v-model="form.details" rows="5" required></b-form-textarea>
     </b-form-group>
 
-    <b-form-group label="Image URL" label-for="image">
-      <b-form-input id="image" v-model="form.image" type="url" required></b-form-input>
+    <b-form-group label="Select Image" label-for="image">
+      <b-row>
+        <b-col cols="4" v-for="(image, index) in availableImages" :key="index">
+          <b-card :img-src="image" img-alt="Project Image" img-top class="mb-3"
+                  :class="{ 'selected-image': form.image === image }" @click="selectImage(image)"></b-card>
+        </b-col>
+      </b-row>
     </b-form-group>
 
     <b-button type="submit" variant="primary">Save</b-button>
@@ -27,6 +32,10 @@ export default {
     project: {
       type: Object,
       default: null,
+    },
+    availableImages: {
+      type: Array,
+      required: true,
     },
   },
   data() {
@@ -43,7 +52,7 @@ export default {
     project: {
       handler(newValue) {
         if (newValue) {
-          this.form = { ...newValue };
+          this.form = {...newValue};
         } else {
           this.resetForm();
         }
@@ -53,7 +62,7 @@ export default {
   },
   methods: {
     onSubmit() {
-      this.$emit('submit', { ...this.form });
+      this.$emit('submit', {...this.form});
       this.resetForm();
     },
     resetForm() {
@@ -64,6 +73,15 @@ export default {
         image: '',
       };
     },
+    selectImage(image) {
+      this.form.image = image;
+    },
   },
 };
 </script>
+
+<style scoped>
+.selected-image {
+  border: 2px solid blue;
+}
+</style>
