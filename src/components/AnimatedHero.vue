@@ -3,7 +3,7 @@
   <div>
     <b-container fluid class="hero-section">
       <video class="hero-video" autoplay loop muted>
-        <source src="../assets/www.mp4" type="video/mp4">
+        <source src="../../public/www.mp4" type="video/mp4">
       </video>
       <b-row class="justify-content-center align-items-center">
         <b-col cols="12" md="12" lg="6" class="text-center content-wrapper">
