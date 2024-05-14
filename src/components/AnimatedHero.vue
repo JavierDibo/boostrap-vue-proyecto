@@ -6,9 +6,9 @@
       </video>
       <b-row class="justify-content-center align-items-center">
         <b-col cols="12" md="12" lg="6" class="text-center content-wrapper">
-          <h1 class="hero-title">Welcome to My Portfolio</h1>
-          <p class="hero-subtitle">Discover my projects and skills</p>
-          <b-button variant="primary" size="lg" class="hero-button">Explore Now</b-button>
+          <h1 class="hero-title">Bienvenido a mi <strong>portfolio</strong></h1>
+          <p class="hero-subtitle">Descubre mis proyectos y habilidades</p>
+          <b-button variant="primary" size="lg" class="hero-button">Explorar...</b-button>
         </b-col>
       </b-row>
     </b-container>
