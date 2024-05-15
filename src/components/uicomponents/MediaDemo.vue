@@ -1,3 +1,4 @@
+<!--TODO: quitar esta porque no va bien y es fea-->
 <template>
   <div>
     <b-card>

@@ -63,6 +63,18 @@
                 <ModalDemo />
               </b-tab>
 
+              <b-tab title="OverlayDemo">
+                <OverlayDemo />
+              </b-tab>
+
+              <b-tab title="PopoverDemo">
+                <PopoverDemo />
+              </b-tab>
+
+              <b-tab title="ProgressDemo">
+                <ProgressDemo />
+              </b-tab>
+
             </b-tabs>
           </b-card>
         </b-col>
@@ -87,9 +99,14 @@ import EmbedDemo from "@/components/uicomponents/EmbedDemo.vue";
 import ListGroupDemo from "@/components/uicomponents/ListGroupDemo.vue";
 import MediaDemo from "@/components/uicomponents/MediaDemo.vue";
 import ModalDemo from "@/components/uicomponents/ModalDemo.vue";
+import OverlayDemo from "@/components/uicomponents/OverlayDemo.vue";
+import PopoverDemo from "@/components/uicomponents/PopoverDemo.vue";
+import ProgressDemo from "@/components/uicomponents/ProgressDemo.vue";
 
 export default {
   components: {
+    ProgressDemo,
+    PopoverDemo,
     ModalDemo,
     MediaDemo,
     ListGroupDemo,
@@ -104,6 +121,7 @@ export default {
     AspectDemo,
     CalendarDemo,
     JumpotronDemo,
+    OverlayDemo
   },
 };
 </script>
