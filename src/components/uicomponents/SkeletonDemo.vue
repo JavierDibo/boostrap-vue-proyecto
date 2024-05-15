@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h2>{{ loading ? 'Loading...' : 'BootstrapVue Skeleton Demo' }}</h2>
+  <div class="container">
+    <h2>{{ loading ? 'Cargando...' : 'Skeleton' }}</h2>
 
     <b-skeleton-wrapper :loading="loading" class="mb-3">
       <template #loading>
@@ -12,17 +12,12 @@
       </template>
 
       <b-card>
-        <b-card-title>About BootstrapVue Skeleton</b-card-title>
-        <b-card-text>
-          BootstrapVue Skeleton is a component that allows you to display loading states
-          for various components while data is being fetched or computed. It provides
-          an easy way to create placeholder content that feels native to your app.
-        </b-card-text>
+        <b-card-title>¡Hola!</b-card-title>
       </b-card>
     </b-skeleton-wrapper>
 
     <b-row>
-      <b-col md="6">
+      <b-col md="6" class="mb-3">
         <b-card no-body>
           <b-skeleton-img card-img="top" aspect="3:1"></b-skeleton-img>
 
@@ -39,7 +34,7 @@
         </b-card>
       </b-col>
 
-      <b-col md="6">
+      <b-col md="6" class="mb-3">
         <b-skeleton-table
             :rows="5"
             :columns="4"
@@ -57,9 +52,11 @@
       ></b-skeleton-icon>
     </div>
 
-    <b-button variant="primary" class="mt-3" @click="loading = !loading">
-      {{ loading ? 'Stop Loading' : 'Start Loading' }}
-    </b-button>
+    <div class="text-center mt-3">
+      <b-button variant="primary" @click="loading = !loading">
+        {{ loading ? 'Detener Carga' : 'Iniciar Carga' }}
+      </b-button>
+    </div>
   </div>
 </template>
 

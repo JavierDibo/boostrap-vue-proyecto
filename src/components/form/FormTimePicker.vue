@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row justify-content-center mb-4 mt-4">
       <div class="col-md-8 text-center">
-        <h3>Demostración de Selector de Hora de BootstrapVue</h3>
+        <h3>Selector de Hora</h3>
       </div>
     </div>
 

@@ -15,10 +15,6 @@
                 <AspectDemo />
               </b-tab>
 
-              <b-tab title="AvatarDemo">
-                <AvatarDemo />
-              </b-tab>
-
               <b-tab title="ButtonGroupDemo">
                 <ButtonGroupDemo />
               </b-tab>
@@ -39,24 +35,12 @@
                 <CollapseDemo />
               </b-tab>
 
-              <b-tab title="ImageDemo">
-                <ImageDemo />
-              </b-tab>
-
               <b-tab title="JumpotronDemo">
                 <JumpotronDemo />
               </b-tab>
 
-              <b-tab title="EmbedDemo">
-                <EmbedDemo />
-              </b-tab>
-
               <b-tab title="ListGroupDemo">
                 <ListGroupDemo />
-              </b-tab>
-
-              <b-tab title="MediaDemo">
-                <MediaDemo />
               </b-tab>
 
               <b-tab title="ModalDemo">
@@ -86,11 +70,6 @@
               <b-tab title="TableDemo">
                 <TableDemo />
               </b-tab>
-
-              <b-tab title="TimeDemo">
-                <TimeDemo />
-              </b-tab>
-
             </b-tabs>
           </b-card>
         </b-col>
@@ -103,17 +82,13 @@
 
 import AlertDemo from "@/components/uicomponents/AlertDemo.vue";
 import AspectDemo from "@/components/uicomponents/AspectDemo.vue";
-import AvatarDemo from "@/components/uicomponents/AvatarDemo.vue";
 import ButtonToolbarDemo from "@/components/uicomponents/ButtonToolbarDemo.vue";
 import ButtonGroupDemo from "@/components/uicomponents/ButtonGroupDemo.vue";
 import CalendarDemo from "@/components/uicomponents/CalendarDemo.vue";
 import CardDemo from "@/components/uicomponents/CardDemo.vue";
 import CollapseDemo from "@/components/uicomponents/CollapseDemo.vue";
-import ImageDemo from "@/components/uicomponents/ImageDemo.vue";
-import JumpotronDemo from "@/components/uicomponents/JumpotronDemo.vue";
-import EmbedDemo from "@/components/uicomponents/EmbedDemo.vue";
+import JumpotronDemo from "@/components/uicomponents/JumbotronDemo.vue";
 import ListGroupDemo from "@/components/uicomponents/ListGroupDemo.vue";
-import MediaDemo from "@/components/uicomponents/MediaDemo.vue";
 import ModalDemo from "@/components/uicomponents/ModalDemo.vue";
 import OverlayDemo from "@/components/uicomponents/OverlayDemo.vue";
 import PopoverDemo from "@/components/uicomponents/PopoverDemo.vue";
@@ -121,7 +96,6 @@ import ProgressDemo from "@/components/uicomponents/ProgressDemo.vue";
 import SpinnerDemo from "@/components/uicomponents/SpinnerDemo.vue";
 import SkeletonDemo from "@/components/uicomponents/SkeletonDemo.vue";
 import TableDemo from "@/components/uicomponents/TableDemo.vue";
-import TimeDemo from "@/components/uicomponents/TimeDemo.vue";
 
 export default {
   components: {
@@ -130,22 +104,17 @@ export default {
     ProgressDemo,
     PopoverDemo,
     ModalDemo,
-    MediaDemo,
     ListGroupDemo,
-    EmbedDemo,
-    ImageDemo,
     CollapseDemo,
     CardDemo,
     ButtonGroupDemo,
     ButtonToolbarDemo,
-    AvatarDemo,
     AlertDemo,
     AspectDemo,
     CalendarDemo,
     JumpotronDemo,
     OverlayDemo,
     TableDemo,
-    TimeDemo,
   },
 };
 </script>

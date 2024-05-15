@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row justify-content-center mb-4 mt-4">
       <div class="col-md-8 text-center">
-        <h2>Demostración de Etiquetas de Formulario</h2>
+        <h2>Etiquetas de Formulario</h2>
       </div>
     </div>
 

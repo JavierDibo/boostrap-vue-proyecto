@@ -1,45 +1,84 @@
 <template>
-  <div>
-    <h2 class="mb-3">Spinners Demo</h2>
+  <b-container>
+    <!-- Título de la demostración -->
+    <b-row>
+      <b-col>
+        <h1 class="text-center my-4">Spinners</h1>
+      </b-col>
+    </b-row>
 
-    <h3>Spinner Variants</h3>
-    <div class="text-center mb-3 d-flex justify-content-between">
-      <b-spinner v-for="variant in variants" :variant="variant" :key="variant"></b-spinner>
-    </div>
+    <!-- Tipos de Spinners -->
+    <b-row>
+      <b-col>
+        <h2>Tipos de Spinners</h2>
+        <div class="text-center mb-3">
+          <b-spinner ></b-spinner>
+          <b-spinner type="grow" ></b-spinner>
+        </div>
+      </b-col>
+    </b-row>
 
-    <div class="text-center mb-4 d-flex justify-content-between">
-      <b-spinner v-for="variant in variants" :variant="variant" :key="variant" type="grow"></b-spinner>
-    </div>
+    <!-- Variantes de color -->
+    <b-row>
+      <b-col>
+        <h2>Variantes de Color</h2>
+        <div class="text-center mb-3 d-flex justify-content-around">
+          <b-spinner v-for="variant in variants" :variant="variant" :key="variant" ></b-spinner>
+        </div>
+        <div class="text-center d-flex justify-content-around">
+          <b-spinner v-for="variant in variants" :variant="variant" :key="variant" type="grow" ></b-spinner>
+        </div>
+      </b-col>
+    </b-row>
 
-    <h3>Custom Sizes</h3>
-    <div class="mb-4">
-      <b-spinner style="width: 5rem; height: 5rem;" label="Extra Large Spinner"></b-spinner>
-      <b-spinner style="width: 4rem; height: 4rem;" label="Large Spinner" type="grow" variant="success"></b-spinner>
-      <b-spinner style="width: 2rem; height: 2rem;" label="Medium Spinner" variant="danger"></b-spinner>
-      <b-spinner small label="Small Spinner" type="grow" variant="info"></b-spinner>
-    </div>
+    <!-- Tamaños -->
+    <b-row>
+      <b-col>
+        <h2>Tamaños</h2>
+        <div class="text-center mb-3">
+          <b-spinner small></b-spinner>
+          <b-spinner style="width: 3rem; height: 3rem;"></b-spinner>
+          <b-spinner small type="grow"></b-spinner>
+          <b-spinner style="width: 3rem; height: 3rem;" type="grow"></b-spinner>
+        </div>
+      </b-col>
+    </b-row>
 
-    <h3>Spinners in Buttons</h3>
-    <div class="mb-4">
-      <b-button variant="primary" class="mr-2" disabled>
-        <b-spinner small></b-spinner>
-        Loading...
-      </b-button>
+    <!-- Alineación -->
+    <b-row>
+      <b-col>
+        <h2>Alineación</h2>
+        <div class="d-flex justify-content-center mb-3">
+          <b-spinner ></b-spinner>
+        </div>
+        <div class="d-flex align-items-center">
+          <strong></strong>
+          <b-spinner class="ml-auto" ></b-spinner>
+        </div>
+        <div class="clearfix">
+          <b-spinner class="float-right" ></b-spinner>
+        </div>
+      </b-col>
+    </b-row>
 
-      <b-button variant="success" disabled>
-        <b-spinner small type="grow"></b-spinner>
-        Processing...
-      </b-button>
-    </div>
+    <!-- Spinners en botones -->
+    <b-row>
+      <b-col>
+        <h2>Spinners en Botones</h2>
+        <div>
+          <b-button variant="primary" disabled>
+            <b-spinner small></b-spinner>
+            <span class="sr-only"></span>
+          </b-button>
 
-    <h3>Animated Text with Spinner</h3>
-    <div class="d-flex align-items-center mb-4">
-      <strong class="mr-3">Loading</strong>
-      <b-spinner variant="primary" small></b-spinner>
-      <strong class="ml-3">Your Content</strong>
-    </div>
+          <b-button variant="primary" disabled>
+            <b-spinner small type="grow"></b-spinner>
 
-  </div>
+          </b-button>
+        </div>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
@@ -51,3 +90,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+h1 {
+  color: #007bff;
+}
+
+h2 {
+  color: #17a2b8;
+  margin-top: 2rem;
+}
+</style>
