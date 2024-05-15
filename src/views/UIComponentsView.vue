@@ -51,6 +51,18 @@
                 <EmbedDemo />
               </b-tab>
 
+              <b-tab title="ListGroupDemo">
+                <ListGroupDemo />
+              </b-tab>
+
+              <b-tab title="MediaDemo">
+                <MediaDemo />
+              </b-tab>
+
+              <b-tab title="ModalDemo">
+                <ModalDemo />
+              </b-tab>
+
             </b-tabs>
           </b-card>
         </b-col>
@@ -72,9 +84,15 @@ import CollapseDemo from "@/components/uicomponents/CollapseDemo.vue";
 import ImageDemo from "@/components/uicomponents/ImageDemo.vue";
 import JumpotronDemo from "@/components/uicomponents/JumpotronDemo.vue";
 import EmbedDemo from "@/components/uicomponents/EmbedDemo.vue";
+import ListGroupDemo from "@/components/uicomponents/ListGroupDemo.vue";
+import MediaDemo from "@/components/uicomponents/MediaDemo.vue";
+import ModalDemo from "@/components/uicomponents/ModalDemo.vue";
 
 export default {
   components: {
+    ModalDemo,
+    MediaDemo,
+    ListGroupDemo,
     EmbedDemo,
     ImageDemo,
     CollapseDemo,
