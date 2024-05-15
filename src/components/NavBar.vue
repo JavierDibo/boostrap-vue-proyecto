@@ -1,5 +1,4 @@
 <!-- NavBar.vue -->
-<!-- NavBar.vue -->
 <template>
   <b-container>
     <b-navbar toggleable="md" type="dark" class="custom-navbar" fixed="top">
