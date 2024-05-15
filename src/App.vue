@@ -1,9 +1,12 @@
 <!--App.vue-->
 <template>
   <div id="app">
-    <NavBar />
-    <section id="layout-grid" class="content-section">
-      <GridLayout />
+    <NavBar/>
+    <section id="grid-layout" class="content-section">
+      <GridLayout/>
+    </section>
+    <section>
+      <SideBar/>
     </section>
     <section id="projects" class="content-section">
       <!-- Add your Projects section content here -->
@@ -16,9 +19,11 @@
 <script>
 import NavBar from "@/components/NavBar.vue";
 import GridLayout from "@/components/GridLayout.vue";
+import SideBar from "@/components/Sidebar.vue";
 
 export default {
   components: {
+    SideBar,
     GridLayout,
     NavBar,
   },
