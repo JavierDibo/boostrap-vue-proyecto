@@ -22,6 +22,11 @@
         <DropdownDemo />
       </b-container>
     </section>
+    <section id="link" class="content-section">
+      <b-container>
+        <LinkDemo />
+      </b-container>
+    </section>
   </div>
 </template>
 <script>
@@ -30,9 +35,11 @@ import GridLayout from "@/components/GridLayout.vue";
 import SideBar from "@/components/Sidebar.vue";
 import BreadcrumbDemo from "@/components/BreadcrumbDemo.vue";
 import DropdownDemo from "@/components/DropdownDemo.vue";
+import LinkDemo from "@/components/LinkDemo.vue";
 
 export default {
   components: {
+    LinkDemo,
     DropdownDemo,
     BreadcrumbDemo,
     SideBar,
