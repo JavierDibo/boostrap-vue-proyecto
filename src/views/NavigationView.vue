@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import BreadcrumbDemo from "@/components/BreadcrumbDemo.vue";
-import DropdownDemo from "@/components/DropdownDemo.vue";
-import LinkDemo from "@/components/LinkDemo.vue";
-import NavDemo from "@/components/NavDemo.vue";
-import PaginationDemo from "@/components/PaginationDemo.vue";
-import TabsDemo from "@/components/TabsDemo.vue";
+import BreadcrumbDemo from "@/components/navigation/BreadcrumbDemo.vue";
+import DropdownDemo from "@/components/navigation/DropdownDemo.vue";
+import LinkDemo from "@/components/navigation/LinkDemo.vue";
+import NavDemo from "@/components/navigation/NavDemo.vue";
+import PaginationDemo from "@/components/navigation/PaginationDemo.vue";
+import TabsDemo from "@/components/navigation/TabsDemo.vue";
 
 export default {
   components: {
