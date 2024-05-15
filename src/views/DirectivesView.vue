@@ -20,6 +20,10 @@
                 <ScrollspyDemo />
               </b-tab>
 
+              <b-tab title="Iconos" active>
+                <IconsDemo />
+              </b-tab>
+
               <b-tab title="Extra" active>
                 <ExtraDemo />
               </b-tab>
@@ -37,9 +41,11 @@ import HoverDemo from '@/components/directives/HoverDemo.vue';
 import PopoverDemo from "@/components/directives/PopoverDemo.vue";
 import ScrollspyDemo from "@/components/directives/ScrollspyDemo.vue";
 import ExtraDemo from "@/components/directives/ExtraDemo.vue";
+import IconsDemo from "@/components/directives/IconsDemo.vue";
 
 export default {
   components: {
+    IconsDemo,
     ScrollspyDemo,
     PopoverDemo,
     HoverDemo,
