@@ -22,7 +22,7 @@ export default {
         {
           name: 'Layout',
           components: [
-            { name: 'Layout and Grid System', url: '#layout-grid' },
+            { name: 'Sistema de Layout y Celdas', url: '#layout-grid' },
             { name: 'Sidebar', url: '#sidebar' },
           ],
         },

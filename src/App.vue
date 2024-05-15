@@ -2,38 +2,31 @@
 <template>
   <div id="app">
     <NavBar />
-    <AnimatedHero id="home" />
-    <section id="projects">
+    <section id="layout-grid" class="content-section">
+      <GridLayout />
     </section>
-    <section id="projects">
+    <section id="projects" class="content-section">
       <!-- Add your Projects section content here -->
     </section>
-    <section id="contact">
+    <section id="contact" class="content-section">
       <!-- Add your Contact section content here -->
     </section>
   </div>
 </template>
-
 <script>
-import AnimatedHero from "@/components/AnimatedHero.vue";
 import NavBar from "@/components/NavBar.vue";
+import GridLayout from "@/components/GridLayout.vue";
 
 export default {
   components: {
-    AnimatedHero,
+    GridLayout,
     NavBar,
   },
   name: 'App',
 };
 </script>
-
 <style>
-/* Add any global styles here */
-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
+.content-section {
+  padding-top: 72px; /* Add padding equal to the navbar height */
 }
 </style>
