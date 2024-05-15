@@ -19,6 +19,14 @@
                 <AvatarDemo />
               </b-tab>
 
+              <b-tab title="ButtonGroupDemo">
+                <ButtonGroupDemo />
+              </b-tab>
+
+              <b-tab title="ButtonToolbarDemo">
+                <ButtonToolbarDemo />
+              </b-tab>
+
             </b-tabs>
           </b-card>
         </b-col>
@@ -29,13 +37,16 @@
 
 <script>
 
-
 import AlertDemo from "@/components/uicomponents/AlertDemo.vue";
 import AspectDemo from "@/components/uicomponents/AspectDemo.vue";
 import AvatarDemo from "@/components/uicomponents/AvatarDemo.vue";
+import ButtonToolbarDemo from "@/components/uicomponents/ButtonToolbarDemo.vue";
+import ButtonGroupDemo from "@/components/uicomponents/ButtonGroupDemo.vue";
 
 export default {
   components: {
+    ButtonGroupDemo,
+    ButtonToolbarDemo,
     AvatarDemo,
     AlertDemo,
     AspectDemo,
