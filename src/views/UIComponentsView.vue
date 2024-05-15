@@ -3,71 +3,71 @@
     <b-container class="my-5">
       <b-row class="justify-content-center">
         <b-col cols="12" md="10">
-          <h1 class="text-center mb-5">UI Components</h1>
+          <h1 class="text-center mb-5">Componentes UI</h1>
 
           <b-card no-body>
             <b-tabs card>
-              <b-tab title="AlertDemo" active>
+              <b-tab title="Alertas" active>
                 <AlertDemo />
               </b-tab>
 
-              <b-tab title="AspectDemo">
+              <b-tab title="Aspecto">
                 <AspectDemo />
               </b-tab>
 
-              <b-tab title="ButtonGroupDemo">
+              <b-tab title="Grupo de Botones">
                 <ButtonGroupDemo />
               </b-tab>
 
-              <b-tab title="ButtonToolbarDemo">
+              <b-tab title="Barra de Herramientas de Botones">
                 <ButtonToolbarDemo />
               </b-tab>
 
-              <b-tab title="CalendarDemo">
+              <b-tab title="Calendario">
                 <CalendarDemo />
               </b-tab>
 
-              <b-tab title="CardDemo">
+              <b-tab title="Tarjetas">
                 <CardDemo />
               </b-tab>
 
-              <b-tab title="CollapseDemo">
+              <b-tab title="Colapsar">
                 <CollapseDemo />
               </b-tab>
 
-              <b-tab title="JumpotronDemo">
+              <b-tab title="Jumbotron">
                 <JumpotronDemo />
               </b-tab>
 
-              <b-tab title="ListGroupDemo">
+              <b-tab title="Lista de Grupo">
                 <ListGroupDemo />
               </b-tab>
 
-              <b-tab title="ModalDemo">
+              <b-tab title="Modal">
                 <ModalDemo />
               </b-tab>
 
-              <b-tab title="OverlayDemo">
+              <b-tab title="Superposición">
                 <OverlayDemo />
               </b-tab>
 
-              <b-tab title="PopoverDemo">
+              <b-tab title="Popover">
                 <PopoverDemo />
               </b-tab>
 
-              <b-tab title="ProgressDemo">
+              <b-tab title="Progreso">
                 <ProgressDemo />
               </b-tab>
 
-              <b-tab title="SpinnerDemo">
+              <b-tab title="Spinner">
                 <SpinnerDemo />
               </b-tab>
 
-              <b-tab title="SkeletonDemo">
+              <b-tab title="Skeleton">
                 <SkeletonDemo />
               </b-tab>
 
-              <b-tab title="TableDemo">
+              <b-tab title="Tabla">
                 <TableDemo />
               </b-tab>
             </b-tabs>
@@ -79,7 +79,6 @@
 </template>
 
 <script>
-
 import AlertDemo from "@/components/uicomponents/AlertDemo.vue";
 import AspectDemo from "@/components/uicomponents/AspectDemo.vue";
 import ButtonToolbarDemo from "@/components/uicomponents/ButtonToolbarDemo.vue";
