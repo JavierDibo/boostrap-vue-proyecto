@@ -4,6 +4,7 @@ import LayoutView from '@/views/LayoutView.vue';
 import NavigationView from '@/views/NavigationView.vue';
 import FormsView from "@/views/FormsView.vue";
 import UIComponentsView from "@/views/UIComponentsView.vue";
+import DirectivesView from "@/views/DirectivesView.vue";
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,10 @@ const routes = [
         path: '/app/uicomponents',
         component: UIComponentsView,
     },
+    {
+        path: '/app/directives',
+        component: DirectivesView,
+    }
 
 ];
 

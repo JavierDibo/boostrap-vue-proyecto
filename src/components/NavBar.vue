@@ -25,6 +25,7 @@ export default {
         { name: 'Navegación', route: '/app/navigation' },
         { name: 'Formularios', route: '/app/forms' },
         { name: 'Componentes UI', route: '/app/uicomponents' },
+        { name: 'Directivas', route: '/app/directives' },
       ],
     };
   },
