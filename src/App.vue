@@ -2,11 +2,14 @@
 <template>
   <div id="app">
     <NavBar/>
-    <section id="grid-layout" class="content-section">
+    <section id="layout-grid" class="content-section">
       <GridLayout/>
     </section>
-    <section>
+    <section id="sidebar" class="content-section">
       <SideBar/>
+    </section>
+    <section id="breadcrumb" class="content-section">
+      <BreadcrumbDemo />
     </section>
     <section id="projects" class="content-section">
       <!-- Add your Projects section content here -->
@@ -20,9 +23,11 @@
 import NavBar from "@/components/NavBar.vue";
 import GridLayout from "@/components/GridLayout.vue";
 import SideBar from "@/components/Sidebar.vue";
+import BreadcrumbDemo from "@/components/BreadcrumbDemo.vue";
 
 export default {
   components: {
+    BreadcrumbDemo,
     SideBar,
     GridLayout,
     NavBar,
