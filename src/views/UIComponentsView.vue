@@ -51,10 +51,6 @@
                 <OverlayDemo />
               </b-tab>
 
-              <b-tab title="Popover">
-                <PopoverDemo />
-              </b-tab>
-
               <b-tab title="Progreso">
                 <ProgressDemo />
               </b-tab>
@@ -90,7 +86,6 @@ import JumpotronDemo from "@/components/uicomponents/JumbotronDemo.vue";
 import ListGroupDemo from "@/components/uicomponents/ListGroupDemo.vue";
 import ModalDemo from "@/components/uicomponents/ModalDemo.vue";
 import OverlayDemo from "@/components/uicomponents/OverlayDemo.vue";
-import PopoverDemo from "@/components/uicomponents/PopoverDemo.vue";
 import ProgressDemo from "@/components/uicomponents/ProgressDemo.vue";
 import SpinnerDemo from "@/components/uicomponents/SpinnerDemo.vue";
 import SkeletonDemo from "@/components/uicomponents/SkeletonDemo.vue";
@@ -101,7 +96,6 @@ export default {
     SkeletonDemo,
     SpinnerDemo,
     ProgressDemo,
-    PopoverDemo,
     ModalDemo,
     ListGroupDemo,
     CollapseDemo,

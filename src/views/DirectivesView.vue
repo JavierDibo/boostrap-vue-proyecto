@@ -11,6 +11,11 @@
               <b-tab title="Hover" active>
                 <HoverDemo />
               </b-tab>
+
+              <b-tab title="Popover" active>
+                <PopoverDemo />
+              </b-tab>
+
             </b-tabs>
           </b-card>
         </b-col>
@@ -21,9 +26,11 @@
 
 <script>
 import HoverDemo from '@/components/directives/HoverDemo.vue';
+import PopoverDemo from "@/components/directives/PopoverDemo.vue";
 
 export default {
   components: {
+    PopoverDemo,
     HoverDemo,
   },
 };
