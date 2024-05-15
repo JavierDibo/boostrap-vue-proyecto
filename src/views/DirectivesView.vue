@@ -16,6 +16,14 @@
                 <PopoverDemo />
               </b-tab>
 
+              <b-tab title="Scrollspy" active>
+                <ScrollspyDemo />
+              </b-tab>
+
+              <b-tab title="Extra" active>
+                <ExtraDemo />
+              </b-tab>
+
             </b-tabs>
           </b-card>
         </b-col>
@@ -27,11 +35,15 @@
 <script>
 import HoverDemo from '@/components/directives/HoverDemo.vue';
 import PopoverDemo from "@/components/directives/PopoverDemo.vue";
+import ScrollspyDemo from "@/components/directives/ScrollspyDemo.vue";
+import ExtraDemo from "@/components/directives/ExtraDemo.vue";
 
 export default {
   components: {
+    ScrollspyDemo,
     PopoverDemo,
     HoverDemo,
+    ExtraDemo,
   },
 };
 </script>
