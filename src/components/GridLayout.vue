@@ -2,8 +2,6 @@
 <template>
   <div>
     <b-container>
-      <h2 class="mb-4">Sistema de Layout y Celdas</h2>
-
       <b-row>
         <b-col cols="12" md="6" lg="4" class="mb-4">
           <b-card>
