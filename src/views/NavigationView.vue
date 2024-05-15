@@ -7,6 +7,7 @@
     <LinkDemo />
     <NavDemo />
     <PaginationDemo />
+    <TabsDemo />
   </div>
 </template>
 
@@ -16,9 +17,11 @@ import DropdownDemo from "@/components/DropdownDemo.vue";
 import LinkDemo from "@/components/LinkDemo.vue";
 import NavDemo from "@/components/NavDemo.vue";
 import PaginationDemo from "@/components/PaginationDemo.vue";
+import TabsDemo from "@/components/TabsDemo.vue";
 
 export default {
   components: {
+    TabsDemo,
     NavDemo,
     BreadcrumbDemo,
     DropdownDemo,
