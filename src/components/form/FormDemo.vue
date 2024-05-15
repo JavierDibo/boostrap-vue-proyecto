@@ -2,58 +2,68 @@
 <template>
   <b-container>
     <div>
-      <h1 class="mb-4">Forms Components</h1>
+      <h1 class="mb-4">Formularios básicos</h1>
 
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-        <b-form-group
-            id="input-group-1"
-            label="Email address:"
-            label-for="input-1"
-            description="We'll never share your email with anyone else."
-        >
-          <b-form-input
-              id="input-1"
-              v-model="form.email"
-              type="email"
-              placeholder="Enter email"
-              required
-          ></b-form-input>
-        </b-form-group>
+        <b-container class="mb-4">
+          <h2>Formulario simple</h2>
+          <div class="mb-4">
+            <b-form-group
+                id="input-group-1"
+                label="Correo electrónico:"
+                label-for="input-1"
+                description="Nunca compartiremos tu correo electrónico con nadie más."
+            >
+              <b-form-input
+                  id="input-1"
+                  v-model="form.email"
+                  type="email"
+                  placeholder="Ingresa correo electrónico"
+                  required
+              ></b-form-input>
+            </b-form-group>
+          </div>
+          <div class="mb-4">
+            <b-form-group id="input-group-2" label="Tu Nombre:" label-for="input-2">
+              <b-form-input
+                  id="input-2"
+                  v-model="form.name"
+                  placeholder="Ingresa nombre"
+                  required
+              ></b-form-input>
+            </b-form-group>
+          </div>
 
-        <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
-          <b-form-input
-              id="input-2"
-              v-model="form.name"
-              placeholder="Enter name"
-              required
-          ></b-form-input>
-        </b-form-group>
+          <div class="mb-4">
+            <b-form-group id="input-group-3" label="Comida:" label-for="input-3">
+              <b-form-select
+                  id="input-3"
+                  v-model="form.food"
+                  :options="foods"
+                  required
+              ></b-form-select>
+            </b-form-group>
+          </div>
+          <div class="mb-4">
+            <b-form-group id="input-group-4" v-slot="{ ariaDescribedby }">
+              <b-form-checkbox-group
+                  v-model="form.checked"
+                  id="checkboxes-4"
+                  :aria-describedby="ariaDescribedby"
+              >
+                <b-form-checkbox value="me">Marca esta opción</b-form-checkbox>
+                <b-form-checkbox value="that">Marca esa opción</b-form-checkbox>
+              </b-form-checkbox-group>
+            </b-form-group>
+          </div>
 
-        <b-form-group id="input-group-3" label="Food:" label-for="input-3">
-          <b-form-select
-              id="input-3"
-              v-model="form.food"
-              :options="foods"
-              required
-          ></b-form-select>
-        </b-form-group>
+          <b-button type="submit" variant="primary">Enviar</b-button>
+          <b-button type="reset" variant="danger">Restablecer</b-button>
+        </b-container>
 
-        <b-form-group id="input-group-4" v-slot="{ ariaDescribedby }">
-          <b-form-checkbox-group
-              v-model="form.checked"
-              id="checkboxes-4"
-              :aria-describedby="ariaDescribedby"
-          >
-            <b-form-checkbox value="me">Check me out</b-form-checkbox>
-            <b-form-checkbox value="that">Check that out</b-form-checkbox>
-          </b-form-checkbox-group>
-        </b-form-group>
-
-        <b-button type="submit" variant="primary">Submit</b-button>
-        <b-button type="reset" variant="danger">Reset</b-button>
       </b-form>
 
-      <b-card class="mt-3" header="Form Data Result">
+      <b-card class="mt-3" header="Resultado de los Datos del Formulario">
         <pre class="m-0">{{ form }}</pre>
       </b-card>
     </div>
@@ -70,7 +80,7 @@ export default {
         food: null,
         checked: []
       },
-      foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
+      foods: [{text: 'Selecciona una', value: null}, 'Zanahorias', 'Frijoles', 'Tomates', 'Maíz'],
       show: true
     }
   },
@@ -81,12 +91,12 @@ export default {
     },
     onReset(event) {
       event.preventDefault()
-      // Reset form values
+      // Restablecer los valores del formulario
       this.form.email = ''
       this.form.name = ''
       this.form.food = null
       this.form.checked = []
-      // Trick to reset/clear native browser form validation state
+      // Truco para restablecer/borrar el estado de validación del formulario del navegador
       this.show = false
       this.$nextTick(() => {
         this.show = true

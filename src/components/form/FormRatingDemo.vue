@@ -1,43 +1,69 @@
 <!-- FormRatingDemo.vue -->
 <template>
-  <div>
-    <h2>BootstrapVue Form Rating Demo</h2>
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <h3>Calificación Interactiva</h3>
+        <b-form-rating v-model="value" variant="warning" class="mb-3"></b-form-rating>
+        <p>Valor: {{ value }}</p>
+      </div>
+    </div>
 
-    <h3>Interactive Rating</h3>
-    <b-form-rating v-model="value" variant="warning" class="mb-3"></b-form-rating>
-    <p>Value: {{ value }}</p>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <h3>Calificación de Solo Lectura con Precision Concreta</h3>
+        <b-form-rating v-model="value2" readonly show-value precision="2" variant="success" class="mb-3"></b-form-rating>
+        <p>Valor: {{ value2 }}</p>
+      </div>
+    </div>
 
-    <h3>Readonly Rating with Precision</h3>
-    <b-form-rating v-model="value2" readonly show-value precision="2" variant="success" class="mb-3"></b-form-rating>
-    <p>Value: {{ value2 }}</p>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <h3>Calificación con Color Personalizado</h3>
+        <b-form-rating v-model="value3" color="#ff00ff" size="lg" class="mb-3"></b-form-rating>
+        <p>Valor: {{ value3 }}</p>
+      </div>
+    </div>
 
-    <h3>Rating with Custom Color</h3>
-    <b-form-rating v-model="value3" color="#ff00ff" size="lg" class="mb-3"></b-form-rating>
-    <p>Value: {{ value3 }}</p>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <h3>Calificación con 10 Estrellas</h3>
+        <b-form-rating v-model="value4" stars="10" class="mb-3"></b-form-rating>
+        <p>Valor: {{ value4 }}</p>
+      </div>
+    </div>
 
-    <h3>Rating with 10 Stars</h3>
-    <b-form-rating v-model="value4" stars="10" class="mb-3"></b-form-rating>
-    <p>Value: {{ value4 }}</p>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <h3>Calificación en Línea con Botón de Borrar</h3>
+        <b-form-rating v-model="value5" inline show-clear variant="danger" class="mb-3"></b-form-rating>
+        <p>Valor: {{ value5 }}</p>
+      </div>
+    </div>
 
-    <h3>Inline Rating with Clear Button</h3>
-    <b-form-rating v-model="value5" inline show-clear variant="danger" class="mb-3"></b-form-rating>
-    <p>Value: {{ value5 }}</p>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <h3>Calificación con Iconos Personalizados</h3>
+        <b-form-rating
+            v-model="value6"
+            icon-empty="heart"
+            icon-half="heart-half"
+            icon-full="heart-fill"
+            variant="danger"
+            class="mb-3"
+        ></b-form-rating>
+        <p>Valor: {{ value6 }}</p>
+      </div>
+    </div>
 
-    <h3>Rating with Custom Icons</h3>
-    <b-form-rating
-        v-model="value6"
-        icon-empty="heart"
-        icon-half="heart-half"
-        icon-full="heart-fill"
-        variant="danger"
-        class="mb-3"
-    ></b-form-rating>
-    <p>Value: {{ value6 }}</p>
-
-    <h3>Rating with Internationalization</h3>
-    <b-form-select v-model="locale" :options="locales" class="mb-2"></b-form-select>
-    <b-form-rating v-model="value7" :locale="locale" show-value precision="1" class="mb-3"></b-form-rating>
-    <p>Value: {{ value7 }}</p>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <h3>Calificación con Internacionalización</h3>
+        <b-form-select v-model="locale" :options="locales" class="mb-2"></b-form-select>
+        <b-form-rating v-model="value7" :locale="locale" show-value precision="1" class="mb-3"></b-form-rating>
+        <p>Valor: {{ value7 }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -54,10 +80,10 @@ export default {
       value7: 3.5,
       locale: 'en-US',
       locales: [
-        { text: 'English US (en-US)', value: 'en-US' },
-        { text: 'French (fr)', value: 'fr' },
-        { text: 'Persian (fa)', value: 'fa'},
-        { text: 'Arabic Egyptian (ar-EG)', value: 'ar-EG' }
+        { text: 'Inglés EEUU (en-US)', value: 'en-US' },
+        { text: 'Francés (fr)', value: 'fr' },
+        { text: 'Persa (fa)', value: 'fa'},
+        { text: 'Árabe Egipcio (ar-EG)', value: 'ar-EG' }
       ]
     }
   }

@@ -1,49 +1,65 @@
 <!-- FormTextAreaDemo.vue -->
 <template>
-  <div>
-    <h2>b-form-textarea Demo</h2>
+  <div class="container">
+    <div class="row justify-content-center mb-4 mt-4">
+      <div class="col-md-8 text-center">
+        <h2>Demostración de b-form-textarea</h2>
+      </div>
+    </div>
 
-    <b-card class="mb-3">
-      <b-form-textarea
-          v-model="text"
-          placeholder="Enter your message..."
-          rows="3"
-          max-rows="6"
-          :formatter="formatter"
-          :state="textState"
-      ></b-form-textarea>
-      <b-form-text v-if="!textState">
-        Please enter at least 10 characters.
-      </b-form-text>
-    </b-card>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <b-card bg-variant="light" class="mb-3 p-3 border">
+          <b-form-textarea
+              v-model="text"
+              placeholder="Ingresa tu mensaje..."
+              rows="3"
+              max-rows="6"
+              :formatter="formatter"
+              :state="textState"
+          ></b-form-textarea>
+          <b-form-text v-if="!textState">
+            Por favor ingresa al menos 10 caracteres.
+          </b-form-text>
+        </b-card>
+      </div>
+    </div>
 
-    <b-card>
-      <h4>Preview:</h4>
-      <pre class="rounded p-2 bg-light">{{ text || 'Enter your message above' }}</pre>
-    </b-card>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <b-card bg-variant="light" class="p-3 border">
+          <h4>Vista previa:</h4>
+          <pre class="rounded p-2 bg-light">{{ text || 'Ingresa tu mensaje arriba' }}</pre>
+        </b-card>
+      </div>
+    </div>
 
-    <b-card class="mt-3">
-      <h5>Text analysis:</h5>
-      <p>Character count: {{ charCount }}</p>
-      <p>Word count: {{ wordCount }}</p>
-      <p>
-        Contains link?
-        <b-badge :variant="containsLink ? 'success' : 'danger'">
-          {{ containsLink ? 'Yes' : 'No' }}
-        </b-badge>
-      </p>
-      <p>
-        {{ remainingChars }} character{{ remainingChars === 1 ? '' : 's' }} remaining
-        (max 200)
-      </p>
-      <b-progress
-          :value="charCount"
-          :max="200"
-          :variant="progressVariant"
-          :animated="charCount > 180"
-          height="1.5rem"
-      ></b-progress>
-    </b-card>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <b-card bg-variant="light" class="p-3 border">
+          <h5>Análisis del texto:</h5>
+          <p>Contador de caracteres: {{ charCount }}</p>
+          <p>Contador de palabras: {{ wordCount }}</p>
+          <p>
+            ¿Contiene enlace?
+            <b-badge :variant="containsLink ? 'success' : 'danger'" class="text-light">
+              {{ containsLink ? 'Sí' : 'No' }}
+            </b-badge>
+          </p>
+          <p>
+            {{ remainingChars }} carácter{{ remainingChars === 1 ? '' : 'es' }} restantes
+            (máximo 200)
+          </p>
+          <b-progress
+              :value="charCount"
+              :max="200"
+              :variant="progressVariant"
+              :animated="charCount > 180"
+              height="1.5rem"
+          ></b-progress>
+        </b-card>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -83,7 +99,7 @@ export default {
   },
   methods: {
     formatter(value) {
-      return value.toLowerCase().replace(/(?:https?|ftp):\/\/[\n\S]+/g, '<link>')
+      return value.toLowerCase().replace(/(?:https?|ftp):\/\/[\n\S]+/g, '<enlace>')
     }
   }
 }

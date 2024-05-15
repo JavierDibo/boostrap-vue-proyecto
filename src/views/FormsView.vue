@@ -10,16 +10,8 @@
                 <FormDemo/>
               </b-tab>
 
-              <b-tab title="Checkboxes">
-                <FormCheckboxDemo/>
-              </b-tab>
-
               <b-tab title="Datepicker">
                 <FormDateDemo/>
-              </b-tab>
-
-              <b-tab title="File Input">
-                <FormFileDemo/>
               </b-tab>
 
               <b-tab title="Form Groups">
@@ -46,10 +38,6 @@
                 <FormSpinbuttonDemo/>
               </b-tab>
 
-              <b-tab title="Tags">
-                <FormTagsDemo/>
-              </b-tab>
-
               <b-tab title="Textarea">
                 <FormTextAreaDemo/>
               </b-tab>
@@ -67,32 +55,26 @@
 
 <script>
 import FormDemo from "@/components/form/FormDemo.vue";
-import FormCheckboxDemo from "@/components/form/FormCheckboxDemo.vue";
 import FormDateDemo from "@/components/form/FormDateDemo.vue";
-import FormFileDemo from "@/components/form/FormFileDemo.vue";
 import FormGroupDemo from "@/components/form/FormGroupDemo.vue";
 import FormInputDemo from "@/components/form/FormInputDemo.vue";
 import FormRadioDemo from "@/components/form/FormRadioDemo.vue";
 import FormRatingDemo from "@/components/form/FormRatingDemo.vue";
 import FormSelectDemo from "@/components/form/FormSelectDemo.vue";
 import FormSpinbuttonDemo from "@/components/form/FormSpinbuttonDemo.vue";
-import FormTagsDemo from "@/components/form/FormTagsDemo.vue";
 import FormTextAreaDemo from "@/components/form/FormTextAreaDemo.vue";
 import FormTimePicker from "@/components/form/FormTimePicker.vue";
 
 export default {
   components: {
     FormDemo,
-    FormCheckboxDemo,
     FormDateDemo,
-    FormFileDemo,
     FormGroupDemo,
     FormInputDemo,
     FormRadioDemo,
     FormRatingDemo,
     FormSelectDemo,
     FormSpinbuttonDemo,
-    FormTagsDemo,
     FormTextAreaDemo,
     FormTimePicker,
   },

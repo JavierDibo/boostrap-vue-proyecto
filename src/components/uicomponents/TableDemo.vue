@@ -33,10 +33,6 @@
         </template>
       </template>
 
-      <template #cell(avatar)="data">
-        <b-avatar :src="data.value" size="3rem" rounded="sm"></b-avatar>
-      </template>
-
       <template #cell(status)="data">
         <b-badge
             :variant="
@@ -96,7 +92,6 @@ export default {
       sortDesc: true,
       fields: [
         { key: 'selected', label: '' },
-        { key: 'avatar', label: 'Avatar' },
         { key: 'id', label: 'ID', sortable: true },
         { key: 'first_name', label: 'First Name', sortable: true },
         { key: 'last_name', label: 'Last Name', sortable: true },
@@ -104,14 +99,10 @@ export default {
         { key: 'progress', label: 'Progress', sortable: true }
       ],
       items: [
-        { id: 1, first_name: 'Kristen', last_name: 'Snow', status: 'Active', progress: 53,
-          avatar: 'https://placekitten.com/300/300' },
-        { id: 2, first_name: 'Josh', last_name: 'Rollins', status: 'Inactive', progress: 28,
-          avatar: 'https://placekitten.com/320/320' },
-        { id: 3, first_name: 'Maggie', last_name: 'Collins', status: 'Active', progress: 92,
-          avatar: 'https://placekitten.com/310/310' },
-        { id: 4, first_name: 'Devin', last_name: 'White', status: 'Active', progress: 70,
-          avatar: 'https://placekitten.com/330/330' }
+        { id: 1, first_name: 'Kristen', last_name: 'Snow', status: 'Active', progress: 53},
+        { id: 2, first_name: 'Josh', last_name: 'Rollins', status: 'Inactive', progress: 28},
+        { id: 3, first_name: 'Maggie', last_name: 'Collins', status: 'Active', progress: 92},
+        { id: 4, first_name: 'Devin', last_name: 'White', status: 'Active', progress: 70}
       ],
       selectedUserId: null,
       showAlert: false

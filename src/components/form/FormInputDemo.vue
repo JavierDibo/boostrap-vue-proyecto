@@ -1,28 +1,27 @@
-<!-- FormInputDemo.vue -->
 <template>
   <div>
-    <!-- Formatted Input -->
-    <h3>Formatted Input</h3>
-    <p>The input below will format the entered text to lowercase instantly:</p>
-    <b-form-input v-model="formattedText" :formatter="formatter" placeholder="Enter your name"></b-form-input>
-    <p>Value: {{ formattedText }}</p>
+    <!-- Entrada Formateada -->
+    <h2>Entrada Formateada</h2>
+    <p>La entrada a continuación formateará el texto ingresado a minúsculas instantáneamente:</p>
+    <b-form-input v-model="formattedText" :formatter="formatter" placeholder="Ingresa tu nombre"></b-form-input>
+    <p>Valor: {{ formattedText }}</p>
 
-    <!-- Debounced Input -->
-    <h3>Debounced Input</h3>
-    <p>The input below will update the value after a 500ms debounce:</p>
-    <b-form-input v-model="debouncedText" debounce="500" placeholder="Enter some text"></b-form-input>
-    <p>Value: {{ debouncedText }}</p>
+    <!-- Entrada con Retraso -->
+    <h2>Entrada con Retraso</h2>
+    <p>La entrada a continuación actualizará el valor después de un retraso de 500ms:</p>
+    <b-form-input v-model="debouncedText" debounce="500" placeholder="Ingresa algún texto"></b-form-input>
+    <p>Valor: {{ debouncedText }}</p>
 
-    <!-- Datalist Input -->
-    <h3>Datalist Input</h3>
-    <p>The input below demonstrates datalist support:</p>
-    <b-form-input v-model="datalistText" list="my-list-id" placeholder="Choose an option"></b-form-input>
+    <!-- Entrada con Lista de Datos -->
+    <h2>Entrada con Lista de Datos</h2>
+    <p>La entrada a continuación demuestra el soporte de lista de datos:</p>
+    <b-form-input v-model="datalistText" list="my-list-id" placeholder="Elige una opción"></b-form-input>
     <datalist id="my-list-id">
-      <option>Option 1</option>
-      <option>Option 2</option>
-      <option>Option 3</option>
+      <option>Opción 1</option>
+      <option>Opción 2</option>
+      <option>Opción 3</option>
     </datalist>
-    <p>Value: {{ datalistText }}</p>
+    <p>Valor: {{ datalistText }}</p>
   </div>
 </template>
 
@@ -36,6 +35,7 @@ export default {
     }
   },
   methods: {
+    // Función que formatea el texto a minúsculas
     formatter(value) {
       return value.toLowerCase();
     }
