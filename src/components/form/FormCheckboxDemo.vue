@@ -1,4 +1,4 @@
-<!-- FormDemo.vue -->
+<!-- FormCheckboxDemo.vue -->
 <template>
   <div>
     <h2>Checkbox Examples</h2>

@@ -1,3 +1,4 @@
+<!-- FormSpinbuttonDemo.vue -->
 <template>
   <div>
     <h2>BootstrapVue Spinbutton Demo</h2>

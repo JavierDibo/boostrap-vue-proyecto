@@ -1,3 +1,4 @@
+<!-- FormTimePicker.vue -->
 <template>
   <div>
     <h3>BootstrapVue Timepicker Demo</h3>

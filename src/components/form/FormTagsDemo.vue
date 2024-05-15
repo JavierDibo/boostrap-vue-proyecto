@@ -1,3 +1,4 @@
+<!-- Form Tags Demo -->
 <template>
   <div>
     <h2>Flashy Form Tags Demo</h2><b-card bg-variant="dark" text-variant="white" class="mb-3">

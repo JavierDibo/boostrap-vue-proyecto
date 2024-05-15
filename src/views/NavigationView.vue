@@ -1,19 +1,40 @@
-<!-- Navigation Components -->
 <template>
-  <div class="container py-4">
-    <h1 class="text-center mb-4">Navigation Components</h1>
-    <div class="row">
-      <div class="col-md-6">
-        <BreadcrumbDemo />
-        <PaginationDemo />
-      </div>
-      <div class="col-md-6">
-        <NavDemo />
-        <DropdownDemo />
-        <TabsDemo />
-        <LinkDemo />
-      </div>
-    </div>
+  <div>
+    <b-container class="my-5">
+      <b-row class="justify-content-center">
+        <b-col cols="12" md="10">
+          <h1 class="text-center mb-5">Navigation Components</h1>
+
+          <b-card no-body>
+            <b-tabs card>
+              <b-tab title="Breadcrumb" active>
+                <BreadcrumbDemo />
+              </b-tab>
+
+              <b-tab title="Pagination">
+                <PaginationDemo />
+              </b-tab>
+
+              <b-tab title="Nav">
+                <NavDemo />
+              </b-tab>
+
+              <b-tab title="Dropdown">
+                <DropdownDemo />
+              </b-tab>
+
+              <b-tab title="Tabs">
+                <TabsDemo />
+              </b-tab>
+
+              <b-tab title="Link">
+                <LinkDemo />
+              </b-tab>
+            </b-tabs>
+          </b-card>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -27,12 +48,12 @@ import TabsDemo from "@/components/navigation/TabsDemo.vue";
 
 export default {
   components: {
-    TabsDemo,
-    NavDemo,
     BreadcrumbDemo,
     DropdownDemo,
     LinkDemo,
-    PaginationDemo
+    NavDemo,
+    PaginationDemo,
+    TabsDemo,
   },
 };
 </script>

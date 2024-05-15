@@ -1,3 +1,4 @@
+<!-- FormRatingDemo.vue -->
 <template>
   <div>
     <h2>BootstrapVue Form Rating Demo</h2>

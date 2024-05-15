@@ -1,5 +1,4 @@
-<!-- FormsView.vue -->
-<!-- TODO: Combine all forms into one coherent form -->
+<!-- FormDemo.vue -->
 <template>
   <b-container>
     <div>

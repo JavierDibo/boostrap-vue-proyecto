@@ -1,3 +1,4 @@
+<!-- FormRadioDemo.vue -->
 <template>
   <div>
     <h2>BootstrapVue Form Radio Demo</h2>

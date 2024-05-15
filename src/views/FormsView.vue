@@ -1,28 +1,71 @@
-<!-- FormsView.vue -->
 <template>
-  <b-container>
-    <div>
-      <h1 class="mb-4">Forms Components</h1>
-      <FormDemo />
-      <FormCheckboxDemo />
-      <FormDateDemo />
-      <FormFileDemo />
-      <FormGroupDemo />
-      <FormInputDemo />
-      <FormRadioDemo />
-      <FormRatingDemo />
-      <FormSelectDemo />
-      <FormSpinbuttonDemo />
-      <FormTagsDemo />
-      <FormTextAreaDemo />
-      <FormTimePicker />
-    </div>
-  </b-container>
+  <div>
+    <b-container class="my-5">
+      <b-row class="justify-content-center">
+        <b-col cols="12" md="10">
+          <h1 class="text-center mb-5">BootstrapVue Form Components Demo</h1>
+          <b-card no-body>
+            <b-tabs card>
+              <b-tab title="Basic Form" active>
+                <FormDemo/>
+              </b-tab>
+
+              <b-tab title="Checkboxes">
+                <FormCheckboxDemo/>
+              </b-tab>
+
+              <b-tab title="Datepicker">
+                <FormDateDemo/>
+              </b-tab>
+
+              <b-tab title="File Input">
+                <FormFileDemo/>
+              </b-tab>
+
+              <b-tab title="Form Groups">
+                <FormGroupDemo/>
+              </b-tab>
+
+              <b-tab title="Inputs">
+                <FormInputDemo/>
+              </b-tab>
+
+              <b-tab title="Radios">
+                <FormRadioDemo/>
+              </b-tab>
+
+              <b-tab title="Rating">
+                <FormRatingDemo/>
+              </b-tab>
+
+              <b-tab title="Select">
+                <FormSelectDemo/>
+              </b-tab>
+
+              <b-tab title="Spinbutton">
+                <FormSpinbuttonDemo/>
+              </b-tab>
+
+              <b-tab title="Tags">
+                <FormTagsDemo/>
+              </b-tab>
+
+              <b-tab title="Textarea">
+                <FormTextAreaDemo/>
+              </b-tab>
+
+              <b-tab title="Timepicker">
+                <FormTimePicker/>
+              </b-tab>
+            </b-tabs>
+          </b-card>
+        </b-col>
+      </b-row>
+    </b-container>
+  </div>
 </template>
 
 <script>
-
-
 import FormDemo from "@/components/form/FormDemo.vue";
 import FormCheckboxDemo from "@/components/form/FormCheckboxDemo.vue";
 import FormDateDemo from "@/components/form/FormDateDemo.vue";
@@ -36,21 +79,22 @@ import FormSpinbuttonDemo from "@/components/form/FormSpinbuttonDemo.vue";
 import FormTagsDemo from "@/components/form/FormTagsDemo.vue";
 import FormTextAreaDemo from "@/components/form/FormTextAreaDemo.vue";
 import FormTimePicker from "@/components/form/FormTimePicker.vue";
+
 export default {
   components: {
-    FormTimePicker,
-    FormSelectDemo,
-    FormRatingDemo,
-    FormRadioDemo,
-    FormGroupDemo,
-    FormFileDemo,
-    FormDateDemo,
-    FormCheckboxDemo,
-    FormInputDemo,
     FormDemo,
+    FormCheckboxDemo,
+    FormDateDemo,
+    FormFileDemo,
+    FormGroupDemo,
+    FormInputDemo,
+    FormRadioDemo,
+    FormRatingDemo,
+    FormSelectDemo,
     FormSpinbuttonDemo,
     FormTagsDemo,
     FormTextAreaDemo,
+    FormTimePicker,
   },
 };
 </script>

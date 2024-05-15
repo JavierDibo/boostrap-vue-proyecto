@@ -1,3 +1,4 @@
+<!-- FormTextAreaDemo.vue -->
 <template>
   <div>
     <h2>b-form-textarea Demo</h2>
