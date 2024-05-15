@@ -1,7 +1,7 @@
 <!-- NavBar.vue -->
 <template>
   <b-navbar toggleable="md" type="dark" class="custom-navbar" fixed="top">
-    <b-navbar-brand href="#">My Portfolio</b-navbar-brand>
+    <b-navbar-brand href="#">BoostrapVue features</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -20,10 +20,11 @@ export default {
   data() {
     return {
       sections: [
-        { name: 'Home', url: '#home' },
-        { name: 'About', url: '#about' },
-        { name: 'Projects', url: '#projects' },
-        { name: 'Contact', url: '#contact' },
+        { name: 'Layout', url: '#layout' },
+        { name: 'Navigation', url: '#navigation' },
+        { name: 'Forms', url: '#forms' },
+        { name: 'UI Components #1', url: '#uicomponents1' },
+        { name: 'UI Components #2', url: '#uicomponents2' },
       ],
     };
   },

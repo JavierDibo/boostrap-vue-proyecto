@@ -4,7 +4,6 @@
     <NavBar />
     <AnimatedHero id="home" />
     <section id="projects">
-      <ProjectCarousel />
     </section>
     <section id="projects">
       <!-- Add your Projects section content here -->
@@ -18,14 +17,11 @@
 <script>
 import AnimatedHero from "@/components/AnimatedHero.vue";
 import NavBar from "@/components/NavBar.vue";
-import ProjectCarousel from "@/components/ProjectCarousel.vue";
-
 
 export default {
   components: {
     AnimatedHero,
     NavBar,
-    ProjectCarousel
   },
   name: 'App',
 };

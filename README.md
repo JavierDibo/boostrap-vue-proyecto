@@ -25,6 +25,65 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ---
 
+Here is the list of elements extracted from the provided HTML content:
+
+1. Alert
+2. Aspect
+3. Avatar
+4. Badge
+5. Breadcrumb
+6. Button
+7. Button Group
+8. Button Toolbar
+9. Calendar
+10. Card
+
+11. Carousel
+12. Collapse
+13. Dropdown
+14. Embed
+15. Form
+16. Form Checkbox
+17. Form Datepicker
+18. Form File
+19. Form Group
+20. Form Input
+
+21. Form Radio
+22. Form Rating
+23. Form Select
+24. Form Spinbutton
+25. Form Tags
+26. Form Textarea
+27. Form Timepicker
+28. Image
+29. Input Group
+30. Jumbotron
+
+31. Layout and Grid System
+32. Link
+33. List Group
+34. Media
+35. Modal
+36. Nav
+37. Navbar
+38. Overlay
+39. Pagination
+40. Pagination Nav
+
+41. Popover
+42. Progress
+43. Sidebar
+44. Skeleton
+45. Spinner
+46. Table
+47. Tabs
+48. Time
+49. Toast
+50. Tooltip
+
+---
+
 Here are some ideas for creating a visually impressive and interactive webpage using Bootstrap-Vue for a presentation:
 
 Parallax scrolling:
