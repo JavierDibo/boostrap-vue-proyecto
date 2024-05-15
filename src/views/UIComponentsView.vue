@@ -87,6 +87,10 @@
                 <TableDemo />
               </b-tab>
 
+              <b-tab title="TimeDemo">
+                <TimeDemo />
+              </b-tab>
+
             </b-tabs>
           </b-card>
         </b-col>
@@ -117,6 +121,7 @@ import ProgressDemo from "@/components/uicomponents/ProgressDemo.vue";
 import SpinnerDemo from "@/components/uicomponents/SpinnerDemo.vue";
 import SkeletonDemo from "@/components/uicomponents/SkeletonDemo.vue";
 import TableDemo from "@/components/uicomponents/TableDemo.vue";
+import TimeDemo from "@/components/uicomponents/TimeDemo.vue";
 
 export default {
   components: {
@@ -139,7 +144,8 @@ export default {
     CalendarDemo,
     JumpotronDemo,
     OverlayDemo,
-    TableDemo
+    TableDemo,
+    TimeDemo,
   },
 };
 </script>
