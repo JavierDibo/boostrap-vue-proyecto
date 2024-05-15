@@ -15,6 +15,7 @@
       <FormSpinbuttonDemo />
       <FormTagsDemo />
       <FormTextAreaDemo />
+      <FormTimePicker />
     </div>
   </b-container>
 </template>
@@ -34,8 +35,10 @@ import FormSelectDemo from "@/components/form/FormSelectDemo.vue";
 import FormSpinbuttonDemo from "@/components/form/FormSpinbuttonDemo.vue";
 import FormTagsDemo from "@/components/form/FormTagsDemo.vue";
 import FormTextAreaDemo from "@/components/form/FormTextAreaDemo.vue";
+import FormTimePicker from "@/components/form/FormTimePicker.vue";
 export default {
   components: {
+    FormTimePicker,
     FormSelectDemo,
     FormRatingDemo,
     FormRadioDemo,
