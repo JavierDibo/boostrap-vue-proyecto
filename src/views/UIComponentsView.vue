@@ -35,6 +35,22 @@
                 <CardDemo />
               </b-tab>
 
+              <b-tab title="CollapseDemo">
+                <CollapseDemo />
+              </b-tab>
+
+              <b-tab title="ImageDemo">
+                <ImageDemo />
+              </b-tab>
+
+              <b-tab title="JumpotronDemo">
+                <JumpotronDemo />
+              </b-tab>
+
+              <b-tab title="EmbedDemo">
+                <EmbedDemo />
+              </b-tab>
+
             </b-tabs>
           </b-card>
         </b-col>
@@ -52,9 +68,16 @@ import ButtonToolbarDemo from "@/components/uicomponents/ButtonToolbarDemo.vue";
 import ButtonGroupDemo from "@/components/uicomponents/ButtonGroupDemo.vue";
 import CalendarDemo from "@/components/uicomponents/CalendarDemo.vue";
 import CardDemo from "@/components/uicomponents/CardDemo.vue";
+import CollapseDemo from "@/components/uicomponents/CollapseDemo.vue";
+import ImageDemo from "@/components/uicomponents/ImageDemo.vue";
+import JumpotronDemo from "@/components/uicomponents/JumpotronDemo.vue";
+import EmbedDemo from "@/components/uicomponents/EmbedDemo.vue";
 
 export default {
   components: {
+    EmbedDemo,
+    ImageDemo,
+    CollapseDemo,
     CardDemo,
     ButtonGroupDemo,
     ButtonToolbarDemo,
@@ -62,6 +85,7 @@ export default {
     AlertDemo,
     AspectDemo,
     CalendarDemo,
+    JumpotronDemo,
   },
 };
 </script>
