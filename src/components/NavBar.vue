@@ -2,7 +2,7 @@
 <template>
   <b-container>
     <b-navbar toggleable="md" type="dark" class="custom-navbar" fixed="top">
-    <b-navbar-brand href="#">BoostrapVue features</b-navbar-brand>
+      <b-navbar-brand href="#">BootstrapVue</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -21,10 +21,10 @@ export default {
   data() {
     return {
       sections: [
-        { name: 'Layout', route: '/app/layout' },
-        { name: 'Navigation', route: '/app/navigation' },
-        { name: 'Forms', route: '/app/forms' },
-        { name: 'UIComponents', route: '/app/uicomponents' },
+        { name: 'Diseño', route: '/app/layout' },
+        { name: 'Navegación', route: '/app/navigation' },
+        { name: 'Formularios', route: '/app/forms' },
+        { name: 'Componentes UI', route: '/app/uicomponents' },
       ],
     };
   },
@@ -35,7 +35,7 @@ export default {
 .custom-navbar {
   background: linear-gradient(to right, #2a166b, #6200ff);
   padding: 1rem;
-  height: 72px; /* Set a fixed height for the navbar */
+  height: 72px; /* Altura fija para la barra de navegación */
 }
 
 .navbar-brand,

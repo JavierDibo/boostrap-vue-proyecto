@@ -3,10 +3,10 @@
   <div>
     <b-row class="justify-content-center">
       <b-col cols="auto">
-        <b-button variant="primary" v-b-toggle.sidebar-1>Activar Sidebar</b-button>
+        <b-button variant="primary" v-b-toggle.sidebar-1>Activar Barra Lateral</b-button>
       </b-col>
     </b-row>
-    <b-sidebar id="sidebar-1" title="BootstrapVue Features" shadow>
+    <b-sidebar id="sidebar-1" title="Características de BootstrapVue" shadow>
       <div class="px-3 py-2">
         <b-nav vertical class="sidebar-nav">
           <div v-for="(section, index) in sections" :key="index">
@@ -25,6 +25,7 @@
     </b-sidebar>
   </div>
 </template>
+
 <script>
 export default {
   name: 'SideBar',
@@ -32,77 +33,77 @@ export default {
     return {
       sections: [
         {
-          name: 'Layout',
+          name: 'Diseño',
           components: [
-            {name: 'Sistema de Layout y Celdas', url: '#layout-grid'},
-            {name: 'Sidebar', url: '#sidebar'},
+            {name: 'Sistema de Diseño y Celdas', url: '#layout-grid'},
+            {name: 'Barra Lateral', url: '#sidebar'},
           ],
         },
         {
-          name: 'Navigation',
+          name: 'Navegación',
           components: [
-            {name: 'Breadcrumb', url: '#breadcrumb'},
-            {name: 'Dropdown', url: '#dropdown'},
-            {name: 'Link', url: '#link'},
-            {name: 'Nav', url: '#nav'},
-            {name: 'Navbar', url: '#navbar'},
-            {name: 'Pagination', url: '#pagination'},
-            {name: 'Pagination Nav', url: '#pagination-nav'},
-            {name: 'Tabs', url: '#tabs'},
+            {name: 'Migas de Pan', url: '#breadcrumb'},
+            {name: 'Desplegable', url: '#dropdown'},
+            {name: 'Enlace', url: '#link'},
+            {name: 'Navegación', url: '#nav'},
+            {name: 'Barra de Navegación', url: '#navbar'},
+            {name: 'Paginación', url: '#pagination'},
+            {name: 'Paginación Nav', url: '#pagination-nav'},
+            {name: 'Pestañas', url: '#tabs'},
           ],
         },
         {
-          name: 'Forms',
+          name: 'Formularios',
           components: [
-            {name: 'Form', url: '#form'},
-            {name: 'Form Checkbox', url: '#form-checkbox'},
-            {name: 'Form Datepicker', url: '#form-datepicker'},
-            {name: 'Form File', url: '#form-file'},
-            {name: 'Form Group', url: '#form-group'},
-            {name: 'Form Input', url: '#form-input'},
-            {name: 'Form Radio', url: '#form-radio'},
-            {name: 'Form Rating', url: '#form-rating'},
-            {name: 'Form Select', url: '#form-select'},
-            {name: 'Form Spinbutton', url: '#form-spinbutton'},
-            {name: 'Form Tags', url: '#form-tags'},
-            {name: 'Form Textarea', url: '#form-textarea'},
-            {name: 'Form Timepicker', url: '#form-timepicker'},
-            {name: 'Input Group', url: '#input-group'},
+            {name: 'Formulario', url: '#form'},
+            {name: 'Formulario Checkbox', url: '#form-checkbox'},
+            {name: 'Formulario Datepicker', url: '#form-datepicker'},
+            {name: 'Formulario Archivo', url: '#form-file'},
+            {name: 'Formulario Grupo', url: '#form-group'},
+            {name: 'Formulario Entrada', url: '#form-input'},
+            {name: 'Formulario Radio', url: '#form-radio'},
+            {name: 'Formulario Calificación', url: '#form-rating'},
+            {name: 'Formulario Selección', url: '#form-select'},
+            {name: 'Formulario Spinbutton', url: '#form-spinbutton'},
+            {name: 'Formulario Etiquetas', url: '#form-tags'},
+            {name: 'Formulario Área de Texto', url: '#form-textarea'},
+            {name: 'Formulario Selector de Hora', url: '#form-timepicker'},
+            {name: 'Grupo de Entrada', url: '#input-group'},
           ],
         },
         {
-          name: 'UI Components #1',
+          name: 'Componentes UI #1',
           components: [
-            {name: 'Alert', url: '#alert'},
-            {name: 'Aspect', url: '#aspect'},
+            {name: 'Alerta', url: '#alert'},
+            {name: 'Aspecto', url: '#aspect'},
             {name: 'Avatar', url: '#avatar'},
-            {name: 'Badge', url: '#badge'},
-            {name: 'Button', url: '#button'},
-            {name: 'Button Group', url: '#button-group'},
-            {name: 'Button Toolbar', url: '#button-toolbar'},
-            {name: 'Calendar', url: '#calendar'},
-            {name: 'Card', url: '#card'},
-            {name: 'Carousel', url: '#carousel'},
-            {name: 'Collapse', url: '#collapse'},
-            {name: 'Embed', url: '#embed'},
-            {name: 'Image', url: '#image'},
+            {name: 'Insignia', url: '#badge'},
+            {name: 'Botón', url: '#button'},
+            {name: 'Grupo de Botones', url: '#button-group'},
+            {name: 'Barra de Herramientas de Botones', url: '#button-toolbar'},
+            {name: 'Calendario', url: '#calendar'},
+            {name: 'Tarjeta', url: '#card'},
+            {name: 'Carrusel', url: '#carousel'},
+            {name: 'Colapso', url: '#collapse'},
+            {name: 'Incrustar', url: '#embed'},
+            {name: 'Imagen', url: '#image'},
             {name: 'Jumbotron', url: '#jumbotron'},
           ],
         },
         {
-          name: 'UI Components #2',
+          name: 'Componentes UI #2',
           components: [
-            {name: 'List Group', url: '#list-group'},
-            {name: 'Media', url: '#media'},
+            {name: 'Grupo de Lista', url: '#list-group'},
+            {name: 'Medios', url: '#media'},
             {name: 'Modal', url: '#modal'},
-            {name: 'Overlay', url: '#overlay'},
+            {name: 'Superposición', url: '#overlay'},
             {name: 'Popover', url: '#popover'},
-            {name: 'Progress', url: '#progress'},
-            {name: 'Skeleton', url: '#skeleton'},
+            {name: 'Progreso', url: '#progress'},
+            {name: 'Esqueleto', url: '#skeleton'},
             {name: 'Spinner', url: '#spinner'},
-            {name: 'Table', url: '#table'},
-            {name: 'Time', url: '#time'},
-            {name: 'Toast', url: '#toast'},
+            {name: 'Tabla', url: '#table'},
+            {name: 'Hora', url: '#time'},
+            {name: 'Tostada', url: '#toast'},
             {name: 'Tooltip', url: '#tooltip'},
           ],
         },
@@ -118,6 +119,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .sidebar-nav {
   padding: 0;

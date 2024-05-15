@@ -12,15 +12,15 @@ export default {
     return {
       breadcrumbItems: [
         {
-          text: 'Layout Grid',
+          text: 'Menu',
           href: '#layout-grid'
         },
         {
-          text: 'Sidebar',
+          text: 'Ajustes',
           href: '#sidebar'
         },
         {
-          text: 'Breadcrumb',
+          text: 'Ajustes de cuenta',
           active: true
         }
       ]

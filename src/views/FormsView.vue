@@ -1,49 +1,50 @@
+<!-- FormsView.vue -->
 <template>
   <div>
     <b-container class="my-5">
       <b-row class="justify-content-center">
         <b-col cols="12" md="10">
-          <h1 class="text-center mb-5">BootstrapVue Form Components Demo</h1>
+          <h1 class="text-center mb-5">Componentes de Formularios</h1>
           <b-card no-body>
             <b-tabs card>
-              <b-tab title="Basic Form" active>
-                <FormDemo/>
+              <b-tab title="Formulario Básico" active>
+                <FormDemo />
               </b-tab>
 
-              <b-tab title="Datepicker">
-                <FormDateDemo/>
+              <b-tab title="Selector de Fecha">
+                <FormDateDemo />
               </b-tab>
 
-              <b-tab title="Form Groups">
-                <FormGroupDemo/>
+              <b-tab title="Grupos de Formularios">
+                <FormGroupDemo />
               </b-tab>
 
-              <b-tab title="Inputs">
-                <FormInputDemo/>
+              <b-tab title="Entradas">
+                <FormInputDemo />
               </b-tab>
 
               <b-tab title="Radios">
-                <FormRadioDemo/>
+                <FormRadioDemo />
               </b-tab>
 
-              <b-tab title="Rating">
-                <FormRatingDemo/>
+              <b-tab title="Calificación">
+                <FormRatingDemo />
               </b-tab>
 
-              <b-tab title="Select">
-                <FormSelectDemo/>
+              <b-tab title="Seleccionar">
+                <FormSelectDemo />
               </b-tab>
 
               <b-tab title="Spinbutton">
-                <FormSpinbuttonDemo/>
+                <FormSpinbuttonDemo />
               </b-tab>
 
-              <b-tab title="Textarea">
-                <FormTextAreaDemo/>
+              <b-tab title="Área de Texto">
+                <FormTextAreaDemo />
               </b-tab>
 
-              <b-tab title="Timepicker">
-                <FormTimePicker/>
+              <b-tab title="Selector de Hora">
+                <FormTimePicker />
               </b-tab>
             </b-tabs>
           </b-card>
