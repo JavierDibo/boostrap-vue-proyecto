@@ -1,57 +1,63 @@
 <template>
   <div>
-    <h2>Form Radio Demo</h2>
-
-    <!-- Inline radios -->
-    <h3>Inline Radios</h3>
-    <b-form-group label="Inline radios">
-      <b-form-radio v-model="ex1Selected" name="ex1-radios" value="A">Option A</b-form-radio>
-      <b-form-radio v-model="ex1Selected" name="ex1-radios" value="B">Option B</b-form-radio>
+    <h2>BootstrapVue Form Radio Demo</h2>
+    <b-form-group label="Flashy Button Radios" v-slot="{ ariaDescribedby }">
+      <b-form-radio-group
+          v-model="selectedButton"
+          :options="buttonOptions"
+          :aria-describedby="ariaDescribedby"
+          buttons
+          button-variant="outline-primary"
+          size="lg"
+          name="radio-btn-outline"
+          stacked
+      ></b-form-radio-group>
     </b-form-group>
-    <p>Selected: <strong>{{ ex1Selected }}</strong></p>
 
-    <!-- Stacked radios -->
-    <h3>Stacked Radios</h3>
-    <b-form-radio-group
-        v-model="ex2Selected"
-        :options="ex2Options"
-        stacked
-        name="ex2-radios"
-    ></b-form-radio-group>
-    <p>Selected: <strong>{{ ex2Selected }}</strong></p>
+    <b-form-group label="Radios with Contextual State" v-slot="{ ariaDescribedby }">
+      <b-form-radio-group
+          v-model="selectedState"
+          :options="stateOptions"
+          :aria-describedby="ariaDescribedby"
+          :state="selectedState !== null"
+          name="radio-validation"
+      >
+        <b-form-invalid-feedback :state="selectedState !== null">Please select one</b-form-invalid-feedback>
+        <b-form-valid-feedback :state="selectedState !== null">Thank you</b-form-valid-feedback>
+      </b-form-radio-group>
+    </b-form-group>
 
-    <!-- Button style radios -->
-    <h3>Button Style Radios</h3>
-    <b-form-radio-group
-        v-model="ex3Selected"
-        :options="ex3Options"
-        buttons
-        button-variant="outline-primary"
-        size="lg"
-        name="ex3-radio-btn"
-    ></b-form-radio-group>
-    <p>Selected: <strong>{{ ex3Selected }}</strong></p>
+    <b-card bg-variant="dark" text-variant="white" class="mt-3">
+      <b-card-text>
+        Selected Button Radio: <strong>{{ selectedButton }}</strong>
+        <br>
+        Selected State Radio: <strong>{{ selectedState }}</strong>
+      </b-card-text>
+    </b-card>
   </div>
 </template>
-
 <script>
 export default {
   data() {
     return {
-      ex1Selected: 'A',
-      ex2Selected: 'first',
-      ex2Options: [
-        { text: 'First Option', value: 'first' },
-        { text: 'Second Option', value: 'second' },
-        { text: 'Third Option', value: 'third' }
+      selectedButton: 'radio1',
+      buttonOptions: [
+        {text: 'Cool Radio', value: 'radio1'},
+        {text: 'Super Radio', value: 'radio2'},
+        {text: 'Amazing Radio', value: 'radio3'},
       ],
-      ex3Selected: 'radio1',
-      ex3Options: [
-        { text: 'Radio 1', value: 'radio1' },
-        { text: 'Radio 2', value: 'radio2' },
-        { text: 'Radio 3', value: 'radio3' }
+      selectedState: null,
+      stateOptions: [
+        {text: 'First', value: 'first'},
+        {text: 'Second', value: 'second'},
+        {text: 'Third', value: 'third'}
       ]
     }
   }
 }
 </script>
+<style scoped>
+h2 {
+  margin-bottom: 20px;
+}
+</style>
