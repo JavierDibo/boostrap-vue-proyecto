@@ -1,81 +1,90 @@
 <!-- PaginationDemo.vue -->
 <template>
-  <div>
-    <h1>Pagination Component</h1>
+  <div class="mb-4">
+    <h2>Pagination</h2>
+    <div class="mb-3">
+      <h5>Basic Usage</h5>
+      <b-pagination
+          v-model="currentPage"
+          :total-rows="rows"
+          :per-page="perPage"
+          aria-controls="my-table"
+      ></b-pagination>
+      <p class="mt-2">Current Page: {{ currentPage }}</p>
+      <b-table
+          id="my-table"
+          :items="items"
+          :per-page="perPage"
+          :current-page="currentPage"
+          small
+      ></b-table>
+    </div>
 
-    <h2>Basic Usage</h2>
-    <b-pagination
-        v-model="currentPage"
-        :total-rows="rows"
-        :per-page="perPage"
-        aria-controls="my-table"
-    ></b-pagination>
+    <div class="mb-4">
+      <h5>Customizing Appearance</h5>
+      <b-pagination
+          v-model="currentPage"
+          :total-rows="rows"
+          :per-page="perPage"
+          first-text="First"
+          prev-text="Prev"
+          next-text="Next"
+          last-text="Last"
+      ></b-pagination>
 
-    <p class="mt-3">Current Page: {{ currentPage }}</p>
+      <b-pagination
+          v-model="currentPage"
+          :total-rows="rows"
+          :per-page="perPage"
+          class="mt-3"
+      >
+        <template #first-text><span class="text-success">First</span></template>
+        <template #prev-text><span class="text-danger">Prev</span></template>
+        <template #next-text><span class="text-warning">Next</span></template>
+        <template #last-text><span class="text-info">Last</span></template>
+        <template #ellipsis-text>
+          <b-spinner small type="grow"></b-spinner>
+          <b-spinner small type="grow"></b-spinner>
+          <b-spinner small type="grow"></b-spinner>
+        </template>
+        <template #page="{ page, active }">
+          <b v-if="active">{{ page }}</b>
+          <i v-else>{{ page }}</i>
+        </template>
+      </b-pagination>
+    </div>
 
-    <b-table
-        id="my-table"
-        :items="items"
-        :per-page="perPage"
-        :current-page="currentPage"
-        small
-    ></b-table>
+    <div class="mb-3">
+      <h5>Goto First/Last Button Type</h5>
+      <b-pagination
+          v-model="currentPage"
+          :total-rows="rows"
+          :per-page="perPage"
+          first-number
+          last-number
+      ></b-pagination>
+    </div>
 
-    <h2>Customizing Appearance</h2>
-    <b-pagination
-        v-model="currentPage"
-        :total-rows="rows"
-        :per-page="perPage"
-        first-text="First"
-        prev-text="Prev"
-        next-text="Next"
-        last-text="Last"
-    ></b-pagination>
+    <div class="mb-3">
+      <h5>Button Size</h5>
+      <b-pagination v-model="currentPage" :total-rows="rows" size="sm"></b-pagination>
+      <b-pagination v-model="currentPage" :total-rows="rows" class="my-2"></b-pagination>
+      <b-pagination v-model="currentPage" :total-rows="rows" size="lg"></b-pagination>
+    </div>
 
-    <b-pagination
-        v-model="currentPage"
-        :total-rows="rows"
-        :per-page="perPage"
-        class="mt-4"
-    >
-      <template #first-text><span class="text-success">First</span></template>
-      <template #prev-text><span class="text-danger">Prev</span></template>
-      <template #next-text><span class="text-warning">Next</span></template>
-      <template #last-text><span class="text-info">Last</span></template>
-      <template #ellipsis-text>
-        <b-spinner small type="grow"></b-spinner>
-        <b-spinner small type="grow"></b-spinner>
-        <b-spinner small type="grow"></b-spinner>
-      </template>
-      <template #page="{ page, active }">
-        <b v-if="active">{{ page }}</b>
-        <i v-else>{{ page }}</i>
-      </template>
-    </b-pagination>
+    <div class="mb-3">
+      <h5>Pill Style</h5>
+      <b-pagination v-model="currentPage" pills :total-rows="rows" size="sm"></b-pagination>
+      <b-pagination v-model="currentPage" pills :total-rows="rows" class="my-2"></b-pagination>
+      <b-pagination v-model="currentPage" pills :total-rows="rows" size="lg"></b-pagination>
+    </div>
 
-    <h2>Goto First/Last Button Type</h2>
-    <b-pagination
-        v-model="currentPage"
-        :total-rows="rows"
-        :per-page="perPage"
-        first-number
-        last-number
-    ></b-pagination>
-
-    <h2>Button Size</h2>
-    <b-pagination v-model="currentPage" :total-rows="rows" size="sm"></b-pagination>
-    <b-pagination v-model="currentPage" :total-rows="rows" class="my-3"></b-pagination>
-    <b-pagination v-model="currentPage" :total-rows="rows" size="lg"></b-pagination>
-
-    <h2>Pill Style</h2>
-    <b-pagination v-model="currentPage" pills :total-rows="rows" size="sm"></b-pagination>
-    <b-pagination v-model="currentPage" pills :total-rows="rows" class="my-3"></b-pagination>
-    <b-pagination v-model="currentPage" pills :total-rows="rows" size="lg"></b-pagination>
-
-    <h2>Alignment</h2>
-    <b-pagination v-model="currentPage" :total-rows="rows" align="center" class="my-3"></b-pagination>
-    <b-pagination v-model="currentPage" :total-rows="rows" align="right" class="my-3"></b-pagination>
-    <b-pagination v-model="currentPage" :total-rows="rows" align="fill"></b-pagination>
+    <div>
+      <h5>Alignment</h5>
+      <b-pagination v-model="currentPage" :total-rows="rows" align="center" class="mb-2"></b-pagination>
+      <b-pagination v-model="currentPage" :total-rows="rows" align="right" class="mb-2"></b-pagination>
+      <b-pagination v-model="currentPage" :total-rows="rows" align="fill"></b-pagination>
+    </div>
   </div>
 </template>
 

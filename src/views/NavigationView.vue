@@ -1,13 +1,19 @@
 <!-- Navigation Components -->
 <template>
-  <div>
-    <h1>Navigation Components</h1>
-    <BreadcrumbDemo />
-    <DropdownDemo />
-    <LinkDemo />
-    <NavDemo />
-    <PaginationDemo />
-    <TabsDemo />
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Navigation Components</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <BreadcrumbDemo />
+        <PaginationDemo />
+      </div>
+      <div class="col-md-6">
+        <NavDemo />
+        <DropdownDemo />
+        <TabsDemo />
+        <LinkDemo />
+      </div>
+    </div>
   </div>
 </template>
 

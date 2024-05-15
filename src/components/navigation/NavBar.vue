@@ -2,7 +2,7 @@
 <template>
   <b-container>
     <b-navbar toggleable="md" type="dark" class="custom-navbar" fixed="top">
-      <b-navbar-brand href="#">BoostrapVue features</b-navbar-brand>
+    <b-navbar-brand href="#">BoostrapVue features</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>

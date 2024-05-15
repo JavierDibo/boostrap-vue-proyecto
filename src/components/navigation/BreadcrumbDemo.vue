@@ -1,7 +1,7 @@
 <!-- BreadcrumbDemo.vue -->
 <template>
-  <div>
-    <h2>Breadcrumb Demo</h2>
+  <div class="mb-4">
+    <h2>Breadcrumb</h2>
     <b-breadcrumb :items="breadcrumbItems"></b-breadcrumb>
   </div>
 </template>
