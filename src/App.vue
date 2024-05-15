@@ -1,5 +1,4 @@
 <!--App.vue-->
-<!--App.vue-->
 <template>
   <div id="app">
     <NavBar/>
@@ -18,6 +17,11 @@
         <BreadcrumbDemo />
       </b-container>
     </section>
+    <section id="dropdown" class="content-section">
+      <b-container>
+        <DropdownDemo />
+      </b-container>
+    </section>
   </div>
 </template>
 <script>
@@ -25,9 +29,11 @@ import NavBar from "@/components/NavBar.vue";
 import GridLayout from "@/components/GridLayout.vue";
 import SideBar from "@/components/Sidebar.vue";
 import BreadcrumbDemo from "@/components/BreadcrumbDemo.vue";
+import DropdownDemo from "@/components/DropdownDemo.vue";
 
 export default {
   components: {
+    DropdownDemo,
     BreadcrumbDemo,
     SideBar,
     GridLayout,
