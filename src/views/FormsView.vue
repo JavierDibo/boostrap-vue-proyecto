@@ -10,6 +10,9 @@
       <FormGroupDemo />
       <FormInputDemo />
       <FormRadioDemo />
+      <FormRatingDemo />
+      <FormSelectDemo />
+      <FormSpinbuttonDemo />
     </div>
   </b-container>
 </template>
@@ -24,8 +27,13 @@ import FormFileDemo from "@/components/form/FormFileDemo.vue";
 import FormGroupDemo from "@/components/form/FormGroupDemo.vue";
 import FormInputDemo from "@/components/form/FormInputDemo.vue";
 import FormRadioDemo from "@/components/form/FormRadioDemo.vue";
+import FormRatingDemo from "@/components/form/FormRatingDemo.vue";
+import FormSelectDemo from "@/components/form/FormSelectDemo.vue";
+import FormSpinbuttonDemo from "@/components/form/FormSpinbuttonDemo.vue";
 export default {
   components: {
+    FormSelectDemo,
+    FormRatingDemo,
     FormRadioDemo,
     FormGroupDemo,
     FormFileDemo,
@@ -33,6 +41,7 @@ export default {
     FormCheckboxDemo,
     FormInputDemo,
     FormDemo,
+    FormSpinbuttonDemo
   },
 };
 </script>
