@@ -5,13 +5,14 @@ import NavigationView from '@/views/NavigationView.vue';
 import FormsView from "@/views/FormsView.vue";
 import UIComponentsView from "@/views/UIComponentsView.vue";
 import DirectivesView from "@/views/DirectivesView.vue";
+import HomeView from "@/views/HomeView.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
     {
         path: '/',
-        redirect: '/app/layout',
+        redirect: '/app/home',
     },
     {
         path: '/app/layout',
@@ -32,6 +33,10 @@ const routes = [
     {
         path: '/app/directives',
         component: DirectivesView,
+    },
+    {
+        path: '*',
+        component: HomeView,
     }
 
 ];

@@ -12,19 +12,19 @@
                 <HoverDemo />
               </b-tab>
 
-              <b-tab title="Popover" active>
+              <b-tab title="Popover">
                 <PopoverDemo />
               </b-tab>
 
-              <b-tab title="Scrollspy" active>
+              <b-tab title="Scrollspy">
                 <ScrollspyDemo />
               </b-tab>
 
-              <b-tab title="Iconos" active>
+              <b-tab title="Iconos">
                 <IconsDemo />
               </b-tab>
 
-              <b-tab title="Extra" active>
+              <b-tab title="Extra">
                 <ExtraDemo />
               </b-tab>
 

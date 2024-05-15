@@ -2,7 +2,8 @@
 <template>
   <b-container>
     <b-navbar toggleable="md" type="dark" class="custom-navbar" fixed="top">
-      <b-navbar-brand href="#">BootstrapVue</b-navbar-brand>
+      <!-- Cambia b-navbar-brand a router-link -->
+      <router-link to="/" class="navbar-brand">BootstrapVue</router-link>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -17,7 +18,12 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router'; // Importa RouterLink
+
 export default {
+  components: {
+    RouterLink, // Registra RouterLink
+  },
   data() {
     return {
       sections: [
