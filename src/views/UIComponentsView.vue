@@ -27,6 +27,14 @@
                 <ButtonToolbarDemo />
               </b-tab>
 
+              <b-tab title="CalendarDemo">
+                <CalendarDemo />
+              </b-tab>
+
+              <b-tab title="CardDemo">
+                <CardDemo />
+              </b-tab>
+
             </b-tabs>
           </b-card>
         </b-col>
@@ -42,14 +50,18 @@ import AspectDemo from "@/components/uicomponents/AspectDemo.vue";
 import AvatarDemo from "@/components/uicomponents/AvatarDemo.vue";
 import ButtonToolbarDemo from "@/components/uicomponents/ButtonToolbarDemo.vue";
 import ButtonGroupDemo from "@/components/uicomponents/ButtonGroupDemo.vue";
+import CalendarDemo from "@/components/uicomponents/CalendarDemo.vue";
+import CardDemo from "@/components/uicomponents/CardDemo.vue";
 
 export default {
   components: {
+    CardDemo,
     ButtonGroupDemo,
     ButtonToolbarDemo,
     AvatarDemo,
     AlertDemo,
     AspectDemo,
+    CalendarDemo,
   },
 };
 </script>
