@@ -1,21 +1,22 @@
 <!--App.vue-->
+<!--App.vue-->
 <template>
   <div id="app">
     <NavBar/>
     <section id="layout-grid" class="content-section">
-      <GridLayout/>
+      <b-container>
+        <GridLayout/>
+      </b-container>
     </section>
     <section id="sidebar" class="content-section">
-      <SideBar/>
+      <b-container>
+        <SideBar/>
+      </b-container>
     </section>
     <section id="breadcrumb" class="content-section">
-      <BreadcrumbDemo />
-    </section>
-    <section id="projects" class="content-section">
-      <!-- Add your Projects section content here -->
-    </section>
-    <section id="contact" class="content-section">
-      <!-- Add your Contact section content here -->
+      <b-container>
+        <BreadcrumbDemo />
+      </b-container>
     </section>
   </div>
 </template>

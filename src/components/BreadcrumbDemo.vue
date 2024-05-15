@@ -1,3 +1,4 @@
+<!-- BreadcrumbDemo.vue -->
 <template>
   <div>
     <h2>Breadcrumb Demo</h2>
