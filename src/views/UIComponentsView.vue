@@ -75,6 +75,18 @@
                 <ProgressDemo />
               </b-tab>
 
+              <b-tab title="SpinnerDemo">
+                <SpinnerDemo />
+              </b-tab>
+
+              <b-tab title="SkeletonDemo">
+                <SkeletonDemo />
+              </b-tab>
+
+              <b-tab title="TableDemo">
+                <TableDemo />
+              </b-tab>
+
             </b-tabs>
           </b-card>
         </b-col>
@@ -102,9 +114,14 @@ import ModalDemo from "@/components/uicomponents/ModalDemo.vue";
 import OverlayDemo from "@/components/uicomponents/OverlayDemo.vue";
 import PopoverDemo from "@/components/uicomponents/PopoverDemo.vue";
 import ProgressDemo from "@/components/uicomponents/ProgressDemo.vue";
+import SpinnerDemo from "@/components/uicomponents/SpinnerDemo.vue";
+import SkeletonDemo from "@/components/uicomponents/SkeletonDemo.vue";
+import TableDemo from "@/components/uicomponents/TableDemo.vue";
 
 export default {
   components: {
+    SkeletonDemo,
+    SpinnerDemo,
     ProgressDemo,
     PopoverDemo,
     ModalDemo,
@@ -121,7 +138,8 @@ export default {
     AspectDemo,
     CalendarDemo,
     JumpotronDemo,
-    OverlayDemo
+    OverlayDemo,
+    TableDemo
   },
 };
 </script>
