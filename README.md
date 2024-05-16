@@ -1,7 +1,7 @@
 # BoostrapVue
 
 This proyect is a simple example of how to use BoostrapVue in a Vue.js project. Showcasing some of the more useful and 
-interesnting components that BoostrapVue has to offer in a ready to go site.
+interesting components that BoostrapVue has to offer in a ready to go site.
 
 ## Components
 
