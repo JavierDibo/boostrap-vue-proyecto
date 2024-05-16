@@ -5,7 +5,7 @@ interesting components that BoostrapVue has to offer in a ready to go site.
 
 ## Components
 
-The components used in this project are divides into groups:
+The components used in this project are divided into groups:
 
 - Layout
 - Navigation
